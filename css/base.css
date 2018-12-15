@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*
+                                 _oo8oo_
+                                o8888888o
+                                88" . "88
+                                (| -_- |)
+                                0\  =  /0
+                              ___/'==='\___
+                            .' \\|     |// '.
+                           / \\|||  :  |||// \
+                          / _||||| -:- |||||_ \
+                         |   | \\\  -  /// |   |
+                         | \_|  ''\---/''  |_/ |
+                         \  .-\__  '-'  __/-.  /
+                       ___'. .'  /--.--\  '. .'___
+                    ."" '<  '.___\_<|>_/___.'  >' "".
+                   | | :  `- \`.:`\ _ /`:.`/ -`  : | |
+                   \  \ `-.   \_ __\ /__ _/   .-` /  /
+               =====`-.____`.___ \_____/ ___.`____.-`=====
+                             佛祖保佑，永无 bug
+*/
+
+/*
+ * @Author: Yggdrasill-7C9
+ * @Date:   2018-9-6 09:36:01
+ * @Last Modified by:  Yggdrasill-7C9
+ * @Last Modified time: 2018-12-15 15:57:10
+ */
+
+/* CSS reset */
+
+
+/* 清除默认样式 */
+body,span,div,a,b,i,s,p,u,
+strong,em,ins,del,
+h1,h2,h3,h4,h5,h6,
+input,button,form,fieldset,legend,textarea,
+ul,ol,li,dd,dl,dt,th,td,
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置HTML5元素为块 */
+article,aside,details,dialog,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+
+a,s,u {
+    text-decoration: none;
+}
+
+b,strong,
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+i,em {
+    font-style: normal;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    border: 0 none;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;/*为了照顾ie图片缩放失真*/
+}
+
+/* 取消链接高亮  */
+body,div,ul,li,ol,dl,dt,dd,table,th,tr,td,tbody,
+h1,h2,h3,h4,h5,h6,
+input,textarea,select,button,form,
+p,a,img,
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 控件 */
+input {
+    /* 去除safari默认的input样式 */
+    -webkit-appearance: none;
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, button {
+    border: 0 none;
+    outline: 0 none;
+}
+
+/* 表单 */
+legend {
+    display: none;
+}
+
+fieldset,iframe {
+    border: 0 none;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* 定位 */
+.fl {
+    float: left;
+    _display: inline;
+}
+
+.fr {
+    float: right;
+    _display: inline;
+}
+
+/* 文字排版 */
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+
+/* 超出文字改为... */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
